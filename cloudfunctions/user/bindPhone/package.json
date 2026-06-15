@@ -1,0 +1,9 @@
+{
+  "name": "campus-errand-bind-phone",
+  "version": "1.0.0",
+  "description": "绑定手机号",
+  "main": "index.js",
+  "dependencies": {
+    "campus-errand-utils": "file:../../common/utils"
+  }
+}

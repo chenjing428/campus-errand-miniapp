@@ -1,0 +1,6 @@
+{
+  "name": "campus-errand-utils",
+  "version": "1.0.0",
+  "description": "校园跑腿小程序公共工具函数",
+  "main": "index.js"
+}

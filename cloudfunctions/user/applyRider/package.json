@@ -1,0 +1,9 @@
+{
+  "name": "campus-errand-apply-rider",
+  "version": "1.0.0",
+  "description": "申请认证骑手",
+  "main": "index.js",
+  "dependencies": {
+    "campus-errand-utils": "file:../../common/utils"
+  }
+}

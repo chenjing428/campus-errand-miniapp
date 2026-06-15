@@ -1,0 +1,9 @@
+{
+  "name": "campus-errand-audit-rider",
+  "version": "1.0.0",
+  "description": "管理员审核骑手申请",
+  "main": "index.js",
+  "dependencies": {
+    "campus-errand-utils": "file:../../common/utils"
+  }
+}

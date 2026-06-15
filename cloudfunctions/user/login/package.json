@@ -1,0 +1,9 @@
+{
+  "name": "campus-errand-login",
+  "version": "1.0.0",
+  "description": "微信登录",
+  "main": "index.js",
+  "dependencies": {
+    "campus-errand-utils": "file:../../common/utils"
+  }
+}

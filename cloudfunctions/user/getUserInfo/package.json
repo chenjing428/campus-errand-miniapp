@@ -1,0 +1,9 @@
+{
+  "name": "campus-errand-get-user-info",
+  "version": "1.0.0",
+  "description": "获取当前用户信息",
+  "main": "index.js",
+  "dependencies": {
+    "campus-errand-utils": "file:../../common/utils"
+  }
+}

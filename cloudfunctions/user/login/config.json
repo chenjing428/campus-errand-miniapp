@@ -1,0 +1,5 @@
+{
+  "appid": "wx你的小程序appid",
+  "secret": "你的小程序secret",
+  "description": "请将 appid 和 secret 替换为你的微信小程序真实信息"
+}

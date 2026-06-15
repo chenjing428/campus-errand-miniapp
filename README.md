@@ -21,6 +21,7 @@ campus-errand-miniapp/
 │   ├── pages/              # 页面
 │   ├── components/         # 公共组件
 │   ├── static/             # 静态资源
+│   ├── utils/              # 工具函数
 │   ├── App.vue             # 应用入口
 │   ├── main.js             # 入口脚本
 │   ├── manifest.json       # 小程序配置
@@ -28,10 +29,14 @@ campus-errand-miniapp/
 │   └── uni.scss            # 全局样式
 ├── admin/                  # 后台管理端（uni-admin）
 ├── cloudfunctions/         # uniCloud 云函数
-│   ├── user/               # 用户相关
-│   ├── order/              # 订单相关
-│   ├── payment/            # 支付结算
-│   └── task/               # 任务/计价配置
+│   ├── common/utils/       # 公共工具函数
+│   └── user/               # 用户相关云函数
+│       ├── login/          # 微信登录
+│       ├── bindPhone/      # 绑定手机号
+│       ├── updateProfile/  # 更新资料
+│       ├── getUserInfo/    # 获取用户信息
+│       ├── applyRider/     # 申请认证骑手
+│       └── auditRider/     # 审核骑手申请
 ├── database/               # 数据库初始化脚本
 └── docs/                   # 设计文档
 ```
@@ -57,10 +62,30 @@ campus-errand-miniapp/
 ## 开发状态
 
 - [x] 项目设计与仓库初始化
-- [ ] 用户认证模块
+- [x] 用户认证模块（登录、绑定手机号、绑定学号、骑手申请/审核）
 - [ ] 订单模块
 - [ ] 支付模块
 - [ ] 后台管理模块
+
+## 快速开始
+
+### 1. 环境准备
+
+- 安装 [HBuilderX](https://www.dcloud.io/hbuilderx.html)
+- 注册 [DCloud 账号](https://dev.dcloud.net.cn/)
+- 注册 [微信小程序](https://mp.weixin.qq.com/)
+
+### 2. 配置
+
+1. 修改 `client/manifest.json` 中的 `mp-weixin.appid` 为你的小程序 appid
+2. 修改 `cloudfunctions/user/login/config.json` 中的 `appid` 和 `secret`
+3. 在 uniCloud 控制台创建数据库集合：`users`、`rider_applications`
+
+### 3. 运行
+
+1. 用 HBuilderX 打开 `client` 目录
+2. 右键 `client` 目录 → 运行到小程序模拟器 → 微信开发者工具
+3. 右键 `cloudfunctions` 下的云函数目录 → 上传并运行
 
 ## 相关文档
 

@@ -1,0 +1,14 @@
+{
+  "collections": [
+    {
+      "collection_name": "users",
+      "description": "用户表",
+      "data": []
+    },
+    {
+      "collection_name": "rider_applications",
+      "description": "骑手认证申请表",
+      "data": []
+    }
+  ]
+}
